@@ -1,1 +1,8 @@
-<button mat-flat-button color="warn" class="button-opener" (click)="open()">Open</button>
+<div class="my-full-screen-dialog"><button (click)="isOpen = !isOpen" type="button" cdkOverlayOrigin #trigger="cdkOverlayOrigin">
+    {{isOpen ? "Close" : "Open"}}
+</button>
+
+<ng-template cdkConnectedOverlay [cdkConnectedOverlayOrigin]="trigger" [cdkConnectedOverlayOpen]="isOpen" FullscreenOverlayContainer>
+    <app-table></app-table>
+</ng-template>
+</div>
