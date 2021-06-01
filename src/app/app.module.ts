@@ -12,7 +12,6 @@ import { MatTableModule } from '@angular/material/table';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppStartPageComponent } from './app-start-page/app-start-page.component';
 import {FullscreenOverlayContainer, OverlayContainer, OverlayModule} from '@angular/cdk/overlay';
-
 @NgModule({
   declarations: [
     AppComponent,
